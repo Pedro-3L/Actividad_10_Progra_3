@@ -13,11 +13,11 @@ namespace Ejercicio2
 			Dictionary<int, string> productos = new Dictionary<int, string>();
 			productos.Add(2020, "Cereal");
 			productos.Add(2010, "Pan");
-			productos.Add(2030, "Manzna ");
+			productos.Add(2030, "Manzna");
 
 			foreach (var item in productos)
 			{
-				Console.WriteLine(item.Key+"|"+item.Value);
+				Console.WriteLine("Codigo:" + item.Key+" | Nombre:" + item.Value);
 			}
 
 
