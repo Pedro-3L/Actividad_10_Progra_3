@@ -20,7 +20,7 @@ namespace Ejercicio8
 			foreach (var item in empleado)
 			{
 			
-				Console.WriteLine("ID: " + item.Key + " |Nombre: " + item.Value);
+				Console.WriteLine("ID: " + item.Key + " | Nombre: " + item.Value);
 			}
 			Console.ReadKey();
 
@@ -35,7 +35,7 @@ namespace Ejercicio8
 			foreach (var item in empleado)
 			{
 
-				Console.WriteLine("ID: " + item.Key + " |Nombre: " + item.Value);
+				Console.WriteLine("ID: " + item.Key + " | Nombre: " + item.Value);
 			}
 			Console.ReadKey();
 

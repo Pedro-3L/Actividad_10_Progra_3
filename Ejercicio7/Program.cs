@@ -23,7 +23,7 @@ namespace Ejercicio7
 
 				if (productos.ContainsKey(codigo))
 				{
-					Console.WriteLine("El codigo ya existe. No se puede agregar.");
+					Console.WriteLine("El codigo ya existe");
 				}
 				else
 				{
