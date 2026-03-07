@@ -15,6 +15,7 @@ namespace Ejercicio_20
 
 			for (int i = 0; i < 3; i++)
 			{
+				Console.Clear();
 				Console.WriteLine("Ingrese el carné del estudiante: ");
 				int carne = int.Parse(Console.ReadLine());
 
@@ -32,16 +33,16 @@ namespace Ejercicio_20
 					Console.WriteLine("Ingrese la carrera:");
 					string carrera = Console.ReadLine();
 					estudiantes.Add(carne, (nombre, edad, carrera));
-
 				}
 			}
-
+			Console.Clear() ;
 			Console.WriteLine("LISTA DE ESTUDIANTES");
 
 			foreach (var estudiante in estudiantes)
 			{
-				Console.WriteLine("Carné: " + estudiante.Key + " Nombre: " + estudiante.Value.Nombre +  " Edad: " + estudiante.Value.Edad +	  " Carrera: " + estudiante.Value.Carrera);
+				Console.WriteLine("Carné: " + estudiante.Key + " Nombre: " + estudiante.Value.Nombre +  " | Edad: " + estudiante.Value.Edad +	  " | Carrera: " + estudiante.Value.Carrera);
 			}
+			Console.ReadKey();
 		}
 	}
 }

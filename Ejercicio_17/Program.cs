@@ -11,11 +11,12 @@ namespace Ejercicio_17
 			int opcion;
 			do
 			{
+				Console.Clear();
 				Console.WriteLine("INVENTARIO");
 				Console.WriteLine("1 Añadir");
-				Console.WriteLine("3 Eliminar");
-				Console.WriteLine("4 Mostrar");
-				Console.WriteLine("0 Salir");
+				Console.WriteLine("2 Eliminar");
+				Console.WriteLine("3 Mostrar");
+				Console.WriteLine("4 Salir");
 				Console.Write("Seleccione una opcion: ");
 				opcion = int.Parse(Console.ReadLine());
 
@@ -48,9 +49,16 @@ namespace Ejercicio_17
 					case 4:
 						Console.Clear();
 						Console.WriteLine("Saliendoo...");
+						Console.ReadKey();
+						break;
+
+					default:
+						Console.Clear();
+						Console.WriteLine("Opcion no valida");
+						Console.ReadKey();
 						break;
 				}
-			} while (opcion != 0);
+			} while (opcion != 4);
 
 		}
 	}

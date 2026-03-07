@@ -11,6 +11,8 @@ namespace Ejercicio_16
 			int opcion;
 			do
 			{
+				Console.Clear();
+
 				Console.WriteLine("DICCIONARIO DE ESTUDIANTES");
 				Console.WriteLine("1- Añadir");
 				Console.WriteLine("2- Mostrar");
@@ -41,6 +43,13 @@ namespace Ejercicio_16
 					case 3:
 						Console.Clear();
 						Console.WriteLine("Saliendoo...");
+						Console.ReadKey();
+						break;
+
+					default:
+						Console.Clear();
+						Console.WriteLine("Opcion no valida");
+						Console.ReadKey();
 						break;
 				}
 			} while (opcion != 3);

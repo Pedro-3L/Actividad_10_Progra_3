@@ -14,12 +14,15 @@ namespace Ejercicio_19
 			int opcion;
 			do
 			{
+				Console.Clear();
 				Console.WriteLine("1 Agregar estudiante");
 				Console.WriteLine("2 Modificar");
 				Console.WriteLine("3 Mostrar");
-				Console.WriteLine("0 Salir");
+				Console.WriteLine("4 Salir");
 				Console.Write("Seleccione una opcion: ");
 				opcion = int.Parse(Console.ReadLine());
+
+				Console.Clear();
 				switch (opcion)
 				{
 					case 1:
@@ -39,11 +42,24 @@ namespace Ejercicio_19
 					case 3:
 						foreach (var item in estudiantes)
 						{
-							Console.WriteLine("Nombre: " + item.Key + " Nota: " + item.Value);
+							Console.WriteLine("Nombre: " + item.Key + " | Nota: " + item.Value);
 						}
+						Console.ReadKey();
+						break;
+
+					case 4:
+						Console.Clear();
+						Console.WriteLine("Saliendoo...");
+						Console.ReadKey();
+						break;
+
+					default:
+						Console.Clear();
+						Console.WriteLine("Opcion no valida");
+						Console.ReadKey();
 						break;
 				}
-			} while (opcion != 0);
+			} while (opcion != 4);
 		}
 
 	}

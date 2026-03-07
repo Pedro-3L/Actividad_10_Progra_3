@@ -14,6 +14,7 @@ namespace Ejercicio_18
 			string respuesta = " ";
 			do
 			{
+				Console.Clear();
 				Console.WriteLine("Ingrese el nombre de usuario:");
 				usuario = Console.ReadLine();
 
@@ -33,13 +34,13 @@ namespace Ejercicio_18
 				respuesta = Console.ReadLine();
 			} while (respuesta != "no" && respuesta == "si");
 
+			Console.Clear();
 			Console.WriteLine("LISTA DE USUSARIOS INGRESADOS:");
-
 			foreach (var item in usuarios)
 			{
 				Console.WriteLine("Usuario: " + item.Key + " Contraseña: " + item.Value);
 			}
-
+			Console.ReadKey();
 		}
 	}
 }
